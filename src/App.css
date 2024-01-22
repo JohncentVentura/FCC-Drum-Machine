@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e7e7e;
+}
+
+#drum-machine{
+    border: 6px solid #e69e32;
+    padding: 1rem;
+    background-color: #374a5c;
+}
+
+h2{
+    margin: 0 0 1rem 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.drum-pads{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)   ;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.drum-pad{
+    width: 6rem;
+    height: 6rem;
+    background-color: #b9b9b9;
+    color: #000000;
+    cursor: pointer;    
+}
+
+.drum-pad:hover{
+    background-color: #e69e32;
+    color: #FFFFFF;
+}
+
+#display{
+    margin: 1rem 0 0 0;
+    color: #FFFFFF;
+    text-align: center;
+}
